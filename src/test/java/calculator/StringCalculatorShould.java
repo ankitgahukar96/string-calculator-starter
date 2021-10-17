@@ -56,4 +56,10 @@ class StringCalculatorShould {
     {
     	 assertEquals(1, sc.add("1,-2"));
     }
+    
+    @Test
+    void String_with_multiple_negative_number_not_Allowed()
+    {
+    	 assertEquals(1, sc.add("1,-5,-2"));
+    }
 }
