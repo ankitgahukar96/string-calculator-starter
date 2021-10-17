@@ -71,4 +71,10 @@ class StringCalculatorShould {
     	cal.add("2,3,4");
     	 assertEquals(2, cal.getCount());
     }
+    
+    @Test
+    void test_greater_than_thousand()
+    {
+    	 assertEquals(5, sc.add("1001,5"));
+    }
 }

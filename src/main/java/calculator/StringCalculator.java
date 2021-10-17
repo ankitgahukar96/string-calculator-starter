@@ -49,7 +49,9 @@ class StringCalculator {
     			 System.out.println("Negative is not allowed"+s);
     			 
     		 }
-    		 else
+    		 else 
+    			 if(temp<1001)
+    			 
     			 
     		 sum+=temp;
     	 }
