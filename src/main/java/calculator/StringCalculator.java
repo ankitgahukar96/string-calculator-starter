@@ -3,14 +3,26 @@ package calculator;
 class StringCalculator {
 
     public int add(String numbers) {
-    	String s =",|\n";
-    	String arr[]= numbers.split(s);
+    	
     	
     	if(numbers== "")
     		return 0;
-    	else if(numbers.length()==1)
+    	if(numbers.length()==1)
     		return StringtoInt(numbers);
-    	else 
+    	String s =",|\n";
+    	String arr[]= numbers.split(s);
+    	try {
+    		StringtoInt(arr[0]);
+		} catch (NumberFormatException e) {
+			// TODO: handle exception
+			s= numbers.split("\n",2)[0];
+			if(s.charAt(0)=='/');
+			{
+				s=s.substring(2,s.length());
+			}
+			arr=numbers.split("\n",2)[1].split(s);
+		}
+    	
            return sum(arr);
     	
     }

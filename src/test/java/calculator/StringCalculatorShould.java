@@ -44,4 +44,10 @@ class StringCalculatorShould {
     {
     	 assertEquals(9, sc.add("2,2\n5"));
     }
+    
+    @Test
+    void String_with_multiple_delimeter()
+    {
+    	 assertEquals(3, sc.add("//;\n1;2"));
+    }
 }
