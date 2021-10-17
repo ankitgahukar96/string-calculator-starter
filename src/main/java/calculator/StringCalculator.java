@@ -1,10 +1,12 @@
 package calculator;
 
 class StringCalculator {
+	int count=0;
+	  
 
     public int add(String numbers) {
     	
-    	
+    	count++;
     	if(numbers== "")
     		return 0;
     	if(numbers.length()==1)
@@ -52,6 +54,10 @@ class StringCalculator {
     		 sum+=temp;
     	 }
     	 return sum;
+     }
+     
+     public int getCount() {
+    	 return count;
      }
      
 }

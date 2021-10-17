@@ -62,4 +62,13 @@ class StringCalculatorShould {
     {
     	 assertEquals(1, sc.add("1,-5,-2"));
     }
+    
+    @Test
+    void test_count_check()
+    {
+    	StringCalculator cal = new StringCalculator();
+    	cal.add("1,2,4");
+    	cal.add("2,3,4");
+    	 assertEquals(2, cal.getCount());
+    }
 }
