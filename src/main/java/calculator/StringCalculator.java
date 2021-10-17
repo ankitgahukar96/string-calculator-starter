@@ -41,7 +41,15 @@ class StringCalculator {
     	 int sum = 0;
     	 for(String s : arr)
     	 {
-    		 sum+=StringtoInt(s);
+    		 int temp=StringtoInt(s);
+    		 if(temp<0)
+    		 {
+    			 System.out.println("Negative is not allowed"+s);
+    			 
+    		 }
+    		 else
+    			 
+    		 sum+=temp;
     	 }
     	 return sum;
      }

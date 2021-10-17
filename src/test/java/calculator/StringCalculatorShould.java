@@ -50,4 +50,10 @@ class StringCalculatorShould {
     {
     	 assertEquals(3, sc.add("//;\n1;2"));
     }
+    
+    @Test
+    void String_with_negative_number_not_Allowed()
+    {
+    	 assertEquals(1, sc.add("1,-2"));
+    }
 }
