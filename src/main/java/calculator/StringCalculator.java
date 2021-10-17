@@ -8,9 +8,17 @@ class StringCalculator {
     	if(numbers== "")
     		return 0;
     	else if(numbers.length()==1)
-    		return Integer.parseInt(numbers);
+    		return StringtoInt(numbers);
     	else
-           return Integer.parseInt(arr[0])+Integer.parseInt(arr[1]) ;
+           return getSum(arr[0],arr[1]);
     }
-
-}
+    
+    
+    private int StringtoInt(String numbers){
+		return Integer.parseInt(numbers);
+    }
+    
+     private int getSum(String a,String b) {
+    	 return StringtoInt(a)+StringtoInt(b);
+     }
+	}
