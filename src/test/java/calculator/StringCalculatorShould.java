@@ -30,14 +30,18 @@ class StringCalculatorShould {
     @Test
     void String_with_numbers_should_return_addition_as_int()
     {
-    	
-         assertEquals(4, sc.add("2,2"));
+    	assertEquals(4, sc.add("2,2"));
     }
     
     @Test
     void String_with_numbers_should_return_multiple_addition_as_int()
     {
-    	
-         assertEquals(9, sc.add("2,2,5"));
+    	 assertEquals(9, sc.add("2,2,5"));
+    }
+    
+    @Test
+    void String_with_numbers_should_return_multiple_newline_delimeter_addition_as_int()
+    {
+    	 assertEquals(9, sc.add("2,2\n5"));
     }
 }
